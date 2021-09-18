@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'samim';
+    src: url('../font/Samim.eot');
+    src: url('../font/Samim.eot?#iefix') format('embedded-type'),
+         url('../font/Samim.ttf') format('truetype'),
+         url('../font/Samim.woff') format('woff'),
+         url('../font/Samim.woff2') format('woff2');
+}
+
+*{
+    font-family: 'samim', Arial, Helvetica, sans-serif;
+    margin: 0;
+    direction: rtl;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    background-image: url('../image/header-background.png.png');
+    background-repeat: no-repeat;
+    background-size: 31% 80%;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    background-color: #8db4fcf5;
+}
+
+nav{
+    width: 100%;
+}
+
+header nav ul li{ 
+    font-size: 15px;
+    padding-left: 4%;
+    list-style: none;
+    display: inline-block;
+}
+
+header h1{
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    font-size: 40px;
+    margin-top: 3%;
+    border-bottom: 1px solid black;
+}
+
+header p{
+    margin: auto;
+    width: 25%;
+    padding-top: 1%;
+}
+
+#about{
+    width: 100%;
+    height: 310px;
+    background-color: rgb(228, 228, 228);
+}
+
+#about h1{
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 1%;
+}
+
+.blogabout{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#about .aboutitem {
+    width: 20%;
+    margin-left: 3%;
+    text-align: center;
+    line-height: 1.9em;
+}
+
+#about .aboutitem h2{
+    font-size: 25px;
+}
+
+
+#about .aboutitem h4{
+    color: rgb(65, 65, 65);
+}
+
+#about .aboutitem img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#message{
+    background-image: url('../image/message-background.jpg');
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#message #backgrund{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+#message .container{
+    color: rgb(229, 226, 226);
+    text-align: center;
+}
+
+#message .container h2{
+    margin-top: 5%;
+    font-size: 35px;
+}
+
+#message .container p{
+    margin-top: 0.5em;
+    font-size: 25px;
+}
+
+#service{
+    background-color: rgb(230, 230, 230);
+    opacity: .8;
+}
+
+#service #servicetitle{
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+
+#service .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#service .container .item{
+    text-align: center;
+    width: 20%;
+}
+
+#service .container .item i{
+    margin-bottom: 9%;
+}
+
+#service .container .item h3{
+    margin-bottom: 3%;
+}
+
+#service .container .item p{
+    color: rgb(56, 56, 56);
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.btn{
+    background-color: #8db4fcf5;
+    margin-top: 2%;
+    padding: 2%;
+    color: rgb(56, 56, 56);
+    border-radius: 5px;
+}
+
+#work{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+#work h2{
+    text-align: center;
+    padding-top: 2%;
+}
+
+#work .container #workblog{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#work .container #workblog a{
+    width: calc(26% - 15px);
+    margin-top: 5%;
+    position: relative;
+}
+
+#work .container #workblog a span{
+    color: rgb(86, 111, 255);
+    display: none;
+}
+
+#work .container #workblog a img{
+    width: 95%;
+    height: 140px;
+    
+}
+
+#work .container #workblog a:hover img{
+    width: 100%;
+    height: 100%;
+    color: rgb(247, 46, 46);
+    transition: all .5s ease-in-out;
+    
+}
+
+#work .container #workblog a:hover span{
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0%;
+    background-color: rgba(104, 104, 104, 0.7);
+}
+
+#contact{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+#contact h2{
+    padding: 1%;
+}
+
+#contact .container form{
+    width: 40%;
+    padding-top: 2%;
+    margin: auto;
+}
+
+#contact .container form input, textarea{
+    outline: none;
+    border: 1px solid #d4d4d4f5;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact .container form input:focus{
+    border: 2px solid #8db4fcf5;
+}
+
+#contact .container form textarea:focus{
+    border: 2px solid #7caafff5;
+}
+
+input, textarea{
+    padding: 1%;
+    margin: 5px;
+    
+}
+
+#contact .container textarea{
+    height: 90px;
+    resize: none;
+}
+
+#contact .container input[type=submit]{
+    margin-right: 2%;
+    border: none;
+    background-color: #8db4fcf5;
+}
+
+#contact .container input[type=submit]:hover{
+    background-color: #528dfaf5;
+    cursor: pointer;
+}
+
+#contact .container input[type=submit]:active{
+    background-color: #2771fcf5;
+}
+
+#contact .container #messenger i{
+    margin-top: 2%;
+    margin-right: 2%;
+    color: #4686ff;
+}
+
+#contact .container #messenger i:hover{
+    color: #1163fc;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    color: rgb(160, 160, 160);
+    background-color: rgb(46, 45, 45);
+    position: relative;
+}
+
+footer h4{
+    position: absolute;
+    top: 70%;
+}
+
+.btn:hover{
+    background-color: #528dfaf5;
+}
+
+.btn:active{
+    background-color: #2771fcf5;
+}
+
